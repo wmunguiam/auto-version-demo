@@ -3,6 +3,8 @@
 This is a sample repository to demonstrate a basic example of automating the process
 of build versioning and release creation.
 
+*Push to docker hub by using secrets for username and password
+
 ## Case 1: Pre-release
 - On each push to the "main" branch, a Github Action is triggered to generate the next
 semantic version based on the following "Conventional commits' history":
