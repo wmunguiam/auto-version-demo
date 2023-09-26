@@ -8,7 +8,7 @@ of build versioning and release creation.
 ## Case 1: Pre-release
 - On each push to the "main" branch, a Github Action is triggered to generate the next
 semantic version based on the following "Conventional commits' history":
-    - **fix:** a commit of the type fix patches a bug in your codebase (this correlates with **PATCH** in Semantic Versioning).
+    - **Any or fix:** a commit of the type fix patches a bug in your codebase (this correlates with **PATCH** in Semantic Versioning).
     - **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with **MINOR** in Semantic Versioning).
     - **BREAKING CHANGE:** a commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking API change (correlating with **MAJOR** in Semantic Versioning). 
 
