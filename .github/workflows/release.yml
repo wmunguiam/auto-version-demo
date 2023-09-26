@@ -1,4 +1,4 @@
-name: release
+name: Release
 on:
   push:
     tags:
@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-release:
-    name: Tag version & image Build for Release
+    name: Release - version & build 
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
