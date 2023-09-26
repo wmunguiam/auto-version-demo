@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-release:
-    name: Tag version & image Build for Pre-release
+    name: Pre-release - version & build 
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Semantic versioning
         id: versioning
-        uses: PaulHatch/semantic-version@v5.2.3
+        uses: PaulHatch/semantic-version@v5.2.1
         with:
           branch: main
           tag_prefix: "v"
