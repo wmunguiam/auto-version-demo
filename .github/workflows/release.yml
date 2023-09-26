@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-release:
-    name: Release: Tag version with image Build
+    name: Release-Tag version with image Build
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
