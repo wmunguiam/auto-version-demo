@@ -5,11 +5,12 @@ on:
       - 'v*'
 
 env:
-  DOCKER_USERNAME: thedoorknobster
-  REPO: thedoorknobster/sample-app
+  DOCKER_USERNAME: prnbc
+  DOCKER_REPO: prnbc/oitec
 
 jobs:
-  docker:
+  build-release:
+    name: Release: Tag version with image Build
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -35,4 +36,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ env.REPO }}:latest,${{ env.REPO }}:${{ env.VERSION }}
+          tags: ${{ env.DOCKER_REPO }}:${{ github.event.repository.name }}-latest,${{ env.DOCKER_REPO }}:${{ github.event.repository.name }}-${{ env.VERSION }}
