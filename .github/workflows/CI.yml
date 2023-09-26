@@ -9,8 +9,8 @@ env:
   DOCKER_REPO: prnbc/oitec
 
 jobs:
-  build:
-    name: Tag version & image Build for pre-release
+  build-release:
+    name: Tag version & image Build for Pre-release
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
